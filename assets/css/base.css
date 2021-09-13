@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+:root {
+     --while-color:#fff;
+     --text-color:#E3D3D3;
+     --primary-color:#97212D;
+     --header-height:75px;
+     --red--color:#FF0000;
+     --border-color: #D8D8D8;
+     --card-text:#E4D5D5;
+    }
+    .first-card{
+        border-bottom:1px solid var(--border-color) ;
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 5px 0;
+      }
+      .first-card h2{
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .first__card-information{
+        margin-top: 15px;
+        max-width: 100%;
+      }
+      .first__card-wrap{
+        cursor: pointer;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .first__card-wrap:hover .first__card-img{
+        transform: scale(1.05);
+      }
+      .first__card-wrap:hover .first__card-des .first__card-quatity::after{
+        width: 60px;
+      }
+      .first__card-img{
+        height: 100%;
+        object-fit: cover;
+        width:100%;
+        transform: scale(1);
+        transition: 1s;
+      }
+      
+      .first__card-des{
+        position: absolute;
+        bottom: 23px;
+        left: 50%;
+        transform: translateX(-90px);
+        color: var(--card-text);
+        cursor: pointer;
+        z-index: 3;
+      }
+      .first__card-quatity{
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .first__card-quatity::after{
+        content:"";
+        display: block;
+        height: 1px;
+        width: 20px;
+        background-color:var(--red--color);
+        transition: 1s;
+      }
+      .first__card-head h1 {
+        padding: 5px 0;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      
+      .first__card-content h1{
+        padding-top: 5px 0;
+        font-size: 2rem;
+        font-weight: 500;
+      
+      }

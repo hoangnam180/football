@@ -1,0 +1,476 @@
+/* begin header */
+.main{
+  overflow: hidden;
+}
+.header {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    /* height */
+    height: var(--header-height);
+    /* color */
+    background-color: #97212D;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    margin: auto;
+}
+  /* End header */
+
+/* Begin nav */
+.navigation {
+  display: flex;
+}
+.navigation__logo {
+  padding-right: 12px;
+  border-radius: 4px;
+}
+
+.navigation__logo a{
+  display: block;
+}
+
+.navigation__logo-img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation__item {
+  padding: 0 16px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navigation__item  a{
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.navigation__item:hover::after,.navigation__user-item:hover::after{
+    transform: scaleX(1) ;
+    cursor: pointer;
+}
+.navigation__item::after, .navigation__user-item::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #FA8072;
+    margin-top: 2px;
+    transform: scaleX(0);
+    transform-origin: 50% 50%;
+    transition:all 0.5s;
+}
+
+.navigation__user {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__user-input {
+    background-color: var(--primary-color) ;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+.navigation__user-input {
+  border-radius: 2px;
+  font-size: 1.5rem;
+  color: var(--while-color);
+  border-color: var(--primary-color);
+  outline: none;
+  border-width: 1.5px;
+  padding: 5px 5px;
+
+}
+
+.navigation__user-list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__user-item {
+  font-size: 2rem;
+  padding-left: 24px;
+}
+
+.navigation__user-item a {
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+/* end nav */
+/* .slide */
+.slider{
+    margin-top: var(--header-height);
+    border-radius: 10px;
+    position: relative;
+}
+.slides{
+
+    display: flex;
+    width: 400%;
+    max-height: 800px;
+    overflow: hidden;
+}
+.slides__radio-btn{
+    display: none;
+}
+.slides__img{
+    width: 25%;
+    transition: 1s;
+}
+.slides__img-item{
+  padding-top: 60%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.navigation-manual{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+.navigation-manual-btn{
+    border: 2px solid var(--text-color);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ;
+}
+.slides__navigation-auto{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 10%;
+}
+.slides__navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+.slides__navigation-auto div{
+    border: 2px solid var(--while-color);
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+}
+#radio1:checked ~ .slides__navigation-auto .auto__btn1 {
+    background-color: var(--while-color);
+}
+#radio2:checked ~ .slides__navigation-auto .auto__btn2 {
+    background-color: var(--while-color);
+}
+#radio3:checked ~ .slides__navigation-auto .auto__btn3 {
+    background-color: var(--while-color);
+}
+#radio4:checked ~ .slides__navigation-auto .auto__btn4 {
+    background-color: var(--while-color);
+}
+.navigation-manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.navigation-manual-btn:hover{
+    background-color: var(--while-color);
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+/* end slide */
+
+/* begin content */
+
+/* Begin card */
+.firsteam{
+  padding: 60px 0;
+}
+.firsteam-heading{
+  font-size:3rem ;
+  position: relative;
+  font-weight: 500;
+  position: relative;
+  transform: translateX(-33px);
+  
+}
+
+.firsteam-heading::after{
+  display: block;
+  content:"";
+  height: 4px;
+  background-color: var(--red--color);
+  position: absolute;
+  bottom: -16px;
+  width: 167px;
+  
+}
+/* end card */
+/* Begin Manager */
+.manager{
+   background-color: rgba(63,63,63,1);;
+   margin: 15px -60px;
+   height: 550px;
+}
+
+.manager-wrapper{
+   height: 550px;
+   position: relative;
+}
+
+.manager-text{
+  text-align: left;
+  width: 100%;
+  color: var(--while-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.manager__heding{
+    color: var(--while-color);
+    font-size: 3rem;
+    font-weight: 400;
+    position: relative;
+    padding-top: 50px;
+  }
+  .manager__heding::after{
+    content: "";
+    display: block;
+    width: 145px;
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    background-color: var(--red--color);
+  }
+  
+  .manager__name{
+  width: 50%;
+  padding-top: 70px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.manager__description{
+  width: 70%;
+  padding-top:40px;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+.manager-img{
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size:cover;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+.manager-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: auto;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--while-color);
+  padding-top: 53px;
+  padding-left: 50px;
+}
+
+.manager__matches-quatity{
+  padding: 10px 0;
+  display: block;
+}
+.manager__wins{
+  padding: 10px 0;
+}
+.manager__trophies{
+  padding-top: 10px 0;
+
+}
+.biography-wrapper{
+  margin-top: 40px;
+}
+
+.biography__heading{
+  font-size: 1.8rem;
+  color: #858585;
+  font-weight: 500;
+}
+
+.biography__description{
+  margin-top: 20px;
+  color: #313030;
+  font-weight: 450;
+  line-height: 1.2;
+  font-size: 1.8rem;
+  position: relative;
+}
+.biography__description::after{
+  content:"";
+  height: 1px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  background-color: #979696 ;
+  bottom: -10px;
+}
+/* End manager */
+
+/* Begin info */
+
+.info{
+  margin-top: 20px;
+}
+
+.info__shortcut-item-head{
+  font-size: 1.4rem;
+  color: #858585;
+  font-weight: 500;
+  box-sizing: border-box;
+
+}
+.info__shortcut-item-body{
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 15px 0px 30px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.info__shortcut-item-body img{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 7px;
+  right: 5px;
+
+} 
+.info__shortcut-item-first-match{
+  transform: translateY(-15px);
+}
+.info__shortcut-item-des{
+  font-size: 1.4rem;
+  color: #858585;
+}
+.info__shortcut-item-date{
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  margin-top:15px ;
+  color: var(--red--color);
+  font-weight: 500;
+}
+
+.info__shortcut-item-footer{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 7px;
+}
+.info__shortcut-item-birth-day{
+    font-size: 1.4rem;
+    color: #858585;
+    font-weight: 500;
+}
+/* end inFo */
+/* begin Legends */
+.legends{
+  background-color: #3F3F3F;
+  width: 100%;
+  height: 720px;
+  margin-top: 50px;
+}
+.legends__heading{
+  font-weight: 600;
+  color: var(--while-color);
+  text-align: center;
+  transform: translateX(1px);
+}
+.legends__heading::after{
+  display: block;
+  content:"";
+  height: 4px;
+  background-color: var(--red--color);
+  position: absolute;
+  bottom: -16px;
+  width: 134px;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+.legends-wrap{
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+}
+.legends-wrap::after{
+  content:"";
+  display: block;
+  height:25%;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);;
+  bottom: 0;
+}
+.legends__des::before{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: red;
+  transition: 1s;
+}
+.first__card-wrap:hover .legends__des::before{
+  width: 100px;
+}
+.legends__des {
+  bottom: 4px;
+}
+.legends__des h1{
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.footer__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img img{
+  padding: 0 20px;
+  max-width: 150px;
+  height: 150px;
+  object-fit: contain;
+  opacity: 0.5;
+}
