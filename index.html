@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Football</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -13,12 +13,31 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon2.png" />
 </head>
 <body>
     <div class="main">
         <div class="header">
             <div class="grid">
                 <div class="header-wrapper">
+                    <input id="navigation-menu-mobile"  class="navigation-menu__check" type="checkbox" hidden>
+                    <label for="navigation-menu-mobile" class="navigation-menu">
+                        <i class="ti-menu"></i>
+                    </label>
+                    <label for="navigation-menu-mobile" class="navigation-overlay"></label>
+                    <div class="navigation-mobile">
+                        <label for="navigation-menu-mobile" class="navigation-mobile__close">
+                            <i class="ti-close"></i>
+                        </label>
+                        <ul class="navigation-mobile__list">
+                            <a href=""><li class="navigation__mobile__item"><i class="ti-home"></i> Home</li></a>
+                            <a href=""><li class="navigation__mobile__item">my united</li></a>
+                            <a href=""><li class="navigation__mobile__item">first team</li></a>
+                            <a href=""><li class="navigation__mobile__item">manager</li></a>
+                            <a href=""><li class="navigation__mobile__item">legend</li></a>
+                        </ul>
+                    </div>
                     <div class="navigation">
                         <div class="navigation__logo">
                             <a href=""><img class="navigation__logo-img" src="./assets/img/logo.png" alt="logo"></a>
@@ -31,16 +50,17 @@
                         </ul>
                     </div>
                     <div class="navigation__user">
-                            <select class="navigation__user-input" name="option">
-                                <option value="" disabled selected>Language</option>
-                                <option value="1">English</option>
-                                <option value="2">VietNam</option>
-                              </select>
+                        <select class="navigation__user-input" name="option">
+                            <option value="" disabled selected>Language</option>
+                            <option value="1">English</option>
+                            <option value="2">VietNam</option>
+                        </select>
                         <ul class="navigation__user-list">
                             <li class="navigation__user-item"><a href="">login</a></li>
                             <li class="navigation__user-item"><a href="">sign in</a></li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -54,7 +74,7 @@
                 <!-- radio end -->
                 <!-- slider images -->
                 <div class="slides__img first">
-                    <div class="slides__img-item" style="background-image: url(./assets/img/slider1.jpg);"></div>
+                    <div class="slides__img-item" style="background-image: url(./assets/img/lan1.jpg);"></div>
                 </div>
                 <div class="slides__img">
                     <div class="slides__img-item" style="background-image: url(./assets/img/slider2.jpg);"></div>
@@ -63,7 +83,7 @@
                     <div class="slides__img-item" style="background-image: url(./assets/img/slider4.jpg);"></div>
                 </div>
                 <div class="slides__img">
-                    <div class="slides__img-item" style="background-image: url(./assets/img/slider3.jpg);"></div>
+                    <div class="slides__img-item" style="background-image: url(./assets/img/lan2.jpg);"></div>
                 </div>
             <!-- end slider images -->
             <!-- automatic navigation-auto start -->
@@ -91,15 +111,15 @@
                         FIRST TEAM
                     </h1>
                 </div>
-                <div class="row">
-                    <div class="col l-12">
+                <div class="row firstcard__mobile">
+                    <div class="col l-12 m-4 c-12 ">
                         <header class="first-card">
                             <h2>GOALKEEPERS</h2>
                         </header>
                     </div>
-                    <div class="col l-12">
+                    <div class="col l-12 m-12 c-12">
                         <div class="row">
-                            <div class="col l-4 l-o-4 first__card-information">
+                            <div class="col l-4 l-o-4 m-4 m-o-4 c-12 first__card-information">
                                    <div class="first__card-wrap">
                                        <img src="./assets/img/card1.jpg" alt="card1" class="first__card-img">
                                             <div class="first__card-des">
@@ -119,7 +139,7 @@
                         </div>
                     </div>
                 <div class="row">
-                    <div class="col l-12">
+                    <div class="col l-12 m-4 c-12 ">
                         <!-- begin card -->
                         <header class="first-card">
                             <h2>DEFENDERS</h2>
@@ -127,7 +147,7 @@
                     </div>
                     <div class="col l-12">
                         <div class="row">
-                            <div class="col l-3 first__card-information">
+                            <div class="col l-3 m-6 c-12 first__card-information">
                                    <div class="first__card-wrap">
                                        <img src="./assets/img/card2.jpg" alt="card1" class="first__card-img">
                                             <div class="first__card-des">
@@ -143,7 +163,7 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-3 first__card-information">
+                            <div class="col l-3 m-6 c-12 first__card-information">
                                    <div class="first__card-wrap">
                                        <img src="./assets/img/card3.jpg" alt="card1" class="first__card-img">
                                             <div class="first__card-des">
@@ -159,7 +179,7 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-3 first__card-information">
+                            <div class="col l-3 m-6 c-12 first__card-information">
                                    <div class="first__card-wrap">
                                        <img src="./assets/img/card4.jpg" alt="card1" class="first__card-img">
                                             <div class="first__card-des">
@@ -175,7 +195,7 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-3 first__card-information">
+                            <div class="col l-3 m-6 c-12 first__card-information">
                                    <div class="first__card-wrap">
                                        <img src="./assets/img/card5.jpg" alt="card1" class="first__card-img">
                                             <div class="first__card-des">
@@ -193,14 +213,14 @@
                                  </div>
                             </div>
                             <div class="row">
-                                <div class="col l-12">
+                                <div class="col l-12 m-4 c-12">
                                     <header class="first-card">
                                         <h2>GOALKEEPERS</h2>
                                     </header>
                                 </div>
                                 <div class="col l-12">
                                     <div class="row">
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-6 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/card6.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -216,7 +236,7 @@
                                                         </div>
                                                     </div>
                                              </div>
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-6 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/card7.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -232,7 +252,7 @@
                                                         </div>
                                                     </div>
                                              </div>
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-4 m-o-4 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/card8.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -252,14 +272,14 @@
                                     </div>
                                 </div>
                             <div class="row">
-                                <div class="col l-12">
+                                <div class="col l-12 m-4 c-12">
                                     <header class="first-card">
                                         <h2>GOALKEEPERS</h2>
                                     </header>
                                 </div>
-                                <div class="col l-12">
+                                <div class="col l-12 m-12 c-12">
                                     <div class="row">
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-6 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/card9.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -275,7 +295,7 @@
                                                         </div>
                                                     </div>
                                              </div>
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-6 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/10.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -291,7 +311,7 @@
                                                         </div>
                                                     </div>
                                              </div>
-                                        <div class="col l-4 first__card-information">
+                                        <div class="col l-4 m-4 m-o-4 c-12 first__card-information">
                                                <div class="first__card-wrap">
                                                    <img src="./assets/img/card11.jpg" alt="card1" class="first__card-img">
                                                         <div class="first__card-des">
@@ -316,7 +336,7 @@
                 <!-- end card -->
                 <div class="manager">
                     <div class="grid wide">
-                        <div class="row">
+                        <div class="row manager__mobile">
                             <div class="col l-4 manager-wrapper">
                                 <div class="manager-text">
                                     <div class="manager__heding">MANAGER</div>
@@ -449,9 +469,9 @@
                     </div>
                     <div class="grid">
                         <div class="row">
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12 first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card12.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card12.jpg" alt="card12" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -462,9 +482,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card13.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card13.jpg" alt="card13" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -475,9 +495,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card14.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card14.jpg" alt="card14" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -488,9 +508,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card15.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card15.jpg" alt="card16" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -501,9 +521,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card16.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card17.jpg" alt="card17" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -514,9 +534,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card17.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card18.jpg" alt="card18" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -527,9 +547,9 @@
                                             </div>
                                         </div>
                                  </div>
-                            <div class="col l-1-7 first__card-information">
+                            <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12  first__card-information">
                                    <div class="first__card-wrap legends-wrap">
-                                       <img src="./assets/img/card18.jpg" alt="card1" class="first__card-img">
+                                       <img src="./assets/img/card19.jpg" alt="card19" class="first__card-img">
                                             <div class="first__card-des legends__des">
                                                 <div class="first__card-head">
                                                     <h1>DEAN</h1>
@@ -540,35 +560,46 @@
                                             </div>
                                         </div>
                                  </div>
+                                 <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12 l-o-1-7 first__card-information">
+                                    <div class="first__card-wrap legends-wrap">
+                                        <img src="./assets/img/card20.jpg" alt="card20" class="first__card-img">
+                                             <div class="first__card-des legends__des">
+                                                 <div class="first__card-head">
+                                                     <h1>DEAN</h1>
+                                                 </div>
+                                                 <div class="first__card-content">
+                                                     <h1>HENDERSON</h1>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                  </div>
+                             <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12 l-o-1-7-1 first__card-information">
+                                    <div class="first__card-wrap legends-wrap">
+                                        <img src="./assets/img/card21.jpg" alt="card21" class="first__card-img">
+                                             <div class="first__card-des legends__des">
+                                                 <div class="first__card-head">
+                                                     <h1>DEAN</h1>
+                                                 </div>
+                                                 <div class="first__card-content">
+                                                     <h1>HENDERSON</h1>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                  </div>
+                             <div class="col l-1-7 l-m-3 l-t-2-4 sm-gutter m-4 c-12 l-o-1-7-1 first__card-information">
+                                    <div class="first__card-wrap legends-wrap">
+                                        <img src="./assets/img/card22.jpg" alt="card22" class="first__card-img">
+                                             <div class="first__card-des legends__des">
+                                                 <div class="first__card-head">
+                                                     <h1>DEAN</h1>
+                                                 </div>
+                                                 <div class="first__card-content">
+                                                     <h1>HENDERSON</h1>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                  </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col l-1-7 l-o-1-7 first__card-information">
-                                           <div class="first__card-wrap legends-wrap">
-                                               <img src="./assets/img/card19.jpg" alt="card1" class="first__card-img">
-                                                    <div class="first__card-des legends__des">
-                                                        <div class="first__card-head">
-                                                            <h1>DEAN</h1>
-                                                        </div>
-                                                        <div class="first__card-content">
-                                                            <h1>HENDERSON</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                         </div>
-                                    <div class="col l-o-1-7-14 first__card-information">
-                                           <div class="first__card-wrap legends-wrap">
-                                               <img src="./assets/img/card20.jpg" alt="card1" class="first__card-img">
-                                                    <div class="first__card-des legends__des">
-                                                        <div class="first__card-head">
-                                                            <h1>DEAN</h1>
-                                                        </div>
-                                                        <div class="first__card-content">
-                                                            <h1>HENDERSON</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                         </div>
-                                        </div>
                             </div>
                     </div>
                 </div>
@@ -580,6 +611,11 @@
                     <img src="./assets/img/chev.jpg" alt="chevrolet">
                     <img src="./assets/img/aon.jpg" alt="aon">
                     <img src="./assets/img/koh.jpg" alt="koh">
+                </div>
+                <div class="footer__info">
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
                 </div>
              </div>
          </div>           
